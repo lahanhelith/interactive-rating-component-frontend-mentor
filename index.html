@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="component">
+    <div id="rating-section">
+      <img class="star-svg" src="./images/icon-star.svg" alt="image of a small star">
+      <h1 class="heading">How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <div class="rating-bar-container">
+          <button type="button" onclick="buttonCheck(1)" class="rating-element" value="1">1</button>
+          <button type="button" onclick="buttonCheck(2)" class="rating-element" value="2">2</button>
+          <button type="button" onclick="buttonCheck(3)" class="rating-element" value="3">3</button>
+          <button type="button" onclick="buttonCheck(4)" class="rating-element" value="4">4</button>
+          <button type="button" onclick="buttonCheck(5)" class="rating-element" value="5">5</button>
+        </div>
+        <button type="submit" id="submit-btn" class="btn">Submit</button>
+      </div>
+    <div class="hidden" id="thank-you-dialog">
+      <img id="thanks-image" src="./images/illustration-thank-you.svg" alt="a thank you image">
+      <span class="rating">You selected <span id="rating-text"></span> out of 5</span>
+
+      <h1 class="thank-you">Thank you!</h1>
+
+      <p class="thank-you-message">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+  </main>
+
+  <!-- Rating state start -->
+
+
+  
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  
+  <!-- Thank you state end -->
+
+  <script src="./script.js"></script>
+</body>
+</html>

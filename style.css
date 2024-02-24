@@ -1,0 +1,123 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing:border-box;
+}
+
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+@font-face {
+    font-family: "Overpass";
+    src: url("./Overpass-VariableFont_wght.ttf") format("TrueType");
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    font-family:"Overpass";
+    color:var(--white);
+    background-color: var(--very-dark-blue);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hidden{
+    display:none;
+}
+
+.component{
+    max-width:350px;
+    background-color: var(--dark-blue);
+    padding:1rem;
+    border-radius:8px;
+}
+
+.rating-bar-container{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+p{
+    font-size:15px;
+    color:var(--light-grey)
+}
+
+.star-svg{
+    padding:0.8rem;
+    background-color:hsl(217, 12%, 63%, 0.15);
+    border-radius: 50%;
+}
+
+.rating-element{
+    cursor: pointer;
+    color:white;
+    font-family:"Overpass";
+    width:50px;
+    height:50px;
+    display:block;
+    border-radius:50%;
+    background-color:hsl(217, 12%, 63%, 0.15);
+    border:none;
+    transition: background-color 150ms;
+}
+
+.rating-element:focus{
+    background-color: var(--light-grey);
+}
+
+.rating-element:hover{
+    background-color:var(--orange);
+}
+
+#submit-btn{
+    cursor: pointer;
+    display:block;
+    margin-top:1rem;
+    width:100%;
+    padding:0.8rem 0.4rem;
+    text-transform: uppercase;
+    background-color:var(--orange);
+    font-weight:700;
+    font-family:"Overpass";
+    color:white;
+    border-radius:2rem;
+    border:none;
+}
+
+#thanks-image{
+    display:block;
+    margin:0 auto;
+}
+
+.rating{
+    background-color:hsl(217, 12%, 63%, 0.15);
+    display:inline-block;
+    margin-top:1rem;
+    padding:0.2rem 1rem;
+    border-radius:1rem;
+    color:var(--orange);
+    font-weight:400;
+}
+
+#thank-you-dialog{
+    text-align:center;
+}
+
+.thank-you{
+    margin-bottom:0.1rem;
+    font-size:1.7rem;
+}
+
+.thank-you-message{
+    margin-top:0;
+}

@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live Site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/lahanhelith/interactive-rating-component-frontend-mentor)
+- Live Site URL: [Live Site URL](https://magical-torte-cbe1c1.netlify.app/)
 
 ## My process
 
